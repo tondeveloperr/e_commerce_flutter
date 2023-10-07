@@ -19,7 +19,7 @@ class MainScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    int pageIndex = 1;
+    int pageIndex = 2;
 
     /// 18:58
     return Scaffold(
