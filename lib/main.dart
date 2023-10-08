@@ -1,8 +1,15 @@
+import 'package:e_commerce_flutter/controllers/main_screen_provider.dart';
 import 'package:e_commerce_flutter/views/ui/main_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MultiProvider(
+    providers: [
+      ChangeNotifierProvider(create: (context) => MainScreenNotifier())
+    ],
+    child: const MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
