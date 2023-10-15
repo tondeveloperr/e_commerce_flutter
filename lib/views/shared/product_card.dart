@@ -31,7 +31,7 @@ class _ProductCardState extends State<ProductCard> {
         child: Container(
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width * 0.6,
-          decoration: BoxDecoration(boxShadow: [
+          decoration: const BoxDecoration(boxShadow: [
             BoxShadow(
                 color: Colors.white,
                 spreadRadius: 1,
@@ -86,22 +86,18 @@ class _ProductCardState extends State<ProductCard> {
                       widget.price,
                       style: appstyle(30, Colors.black, FontWeight.w600),
                     ),
-                    Row(
-                      children: [
-                        Text(
-                          "Colors",
-                          style: appstyle(18, Colors.grey, FontWeight.w500),
-                        ),
-                        const SizedBox(
-                          width: 5,
-                        ),
-                        ChoiceChip(
-                          label: Text(" "),
-                          selected: selected,
-                          visualDensity: VisualDensity.compact,
-                          selectedColor: Colors.black,
-                        )
-                      ],
+                    // Text(
+                    //   "Colors",
+                    //   style: appstyle(18, Colors.grey, FontWeight.w500),
+                    // ),
+                    const SizedBox(
+                      width: 5,
+                    ),
+                    ChoiceChip(
+                      label: Text(" "),
+                      selected: selected,
+                      visualDensity: VisualDensity.compact,
+                      selectedColor: Colors.black,
                     )
                   ],
                 ),

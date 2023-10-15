@@ -79,7 +79,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                             itemCount: 6,
                             scrollDirection: Axis.horizontal,
                             itemBuilder: (context, index) {
-                              return ProductCard(
+                              return const ProductCard(
                                 id: "1",
                                 name: "Sepatu",
                                 price: "200.000",
